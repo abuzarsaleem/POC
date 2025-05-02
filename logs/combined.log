@@ -1,0 +1,295 @@
+{"level":"error","message":"Registration error: Cannot read properties of undefined (reading '0')","stack":"TypeError: Cannot read properties of undefined (reading '0')\n    at User.findByEmail (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/models/User.js:41:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async register (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/controllers/userController.js:21:26)","timestamp":"2025-04-23T14:40:15.610Z"}
+{"level":"error","message":"Registration error: Cannot read properties of undefined (reading '0')","stack":"TypeError: Cannot read properties of undefined (reading '0')\n    at User.findByEmail (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/models/User.js:41:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async register (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/controllers/userController.js:21:26)","timestamp":"2025-04-23T14:45:22.369Z"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"fatal":false,"level":"error","message":"Registration error: (conn:246, no: 1054, SQLState: 42S22) Unknown column 'name' in 'INSERT INTO'\nsql: INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['string','$2a$10$RLq40HYu8s3sSz02dL4ZneJuEaoas9o84PapXtJvX70CxS6o9.fHy','string','user']","name":"SqlError","sql":"INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['string','$2a$10$RLq40HYu8s3sSz02dL4ZneJuEaoas9o84PapXtJvX70CxS6o9.fHy','string','user']","sqlMessage":"Unknown column 'name' in 'INSERT INTO'","sqlState":"42S22","stack":"SqlError: (conn:246, no: 1054, SQLState: 42S22) Unknown column 'name' in 'INSERT INTO'\nsql: INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['string','$2a$10$RLq40HYu8s3sSz02dL4ZneJuEaoas9o84PapXtJvX70CxS6o9.fHy','string','user']\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at PacketNodeEncoded.readError (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet.js:579:19)\n    at Query.readResponsePacket (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\cmd\\parser.js:62:28)\n    at PacketInputStream.receivePacketBasic (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:85:9)\n    at PacketInputStream.onData (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:135:20)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2025-04-24T08:11:32.808Z"}
+{"level":"error","message":"Registration error: (intermediate value) is not iterable","stack":"TypeError: (intermediate value) is not iterable\n    at User.create (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/models/User.js:31:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async register (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/controllers/userController.js:38:20)","timestamp":"2025-04-24T08:33:43.900Z"}
+{"level":"error","message":"Registration error: (intermediate value) is not iterable","stack":"TypeError: (intermediate value) is not iterable\n    at User.create (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/models/User.js:31:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async register (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/controllers/userController.js:38:20)","timestamp":"2025-04-24T08:34:28.652Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"fatal":false,"level":"error","message":"Registration error: (conn:327, no: 1062, SQLState: 23000) Duplicate entry 'raoalishan750@gmail.cm' for key 'email'\nsql: INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['raoalishan750@gmail.cm','$2a$10$Gq/F5qPWLd/PaLNlbyc1Weh/A8xRq9mRgxa/Ins0vsAlD8Yt2Lb8K','alishan','user']","name":"SqlError","sql":"INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['raoalishan750@gmail.cm','$2a$10$Gq/F5qPWLd/PaLNlbyc1Weh/A8xRq9mRgxa/Ins0vsAlD8Yt2Lb8K','alishan','user']","sqlMessage":"Duplicate entry 'raoalishan750@gmail.cm' for key 'email'","sqlState":"23000","stack":"SqlError: (conn:327, no: 1062, SQLState: 23000) Duplicate entry 'raoalishan750@gmail.cm' for key 'email'\nsql: INSERT INTO users (email, password, name, role) VALUES (?, ?, ?, ?) - parameters:['raoalishan750@gmail.cm','$2a$10$Gq/F5qPWLd/PaLNlbyc1Weh/A8xRq9mRgxa/Ins0vsAlD8Yt2Lb8K','alishan','user']\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at PacketNodeEncoded.readError (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet.js:579:19)\n    at Query.readResponsePacket (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\cmd\\parser.js:62:28)\n    at PacketInputStream.receivePacketBasic (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:85:9)\n    at PacketInputStream.onData (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:135:20)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2025-04-24T08:51:34.815Z"}
+{"level":"error","message":"Registration error: Do not know how to serialize a BigInt","stack":"TypeError: Do not know how to serialize a BigInt\n    at JSON.stringify (<anonymous>)\n    at toString (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\jws\\lib\\tostring.js:9:15)\n    at jwsSecuredInput (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\jws\\lib\\sign-stream.js:21:34)\n    at Object.jwsSign [as sign] (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\jws\\lib\\sign-stream.js:31:22)\n    at module.exports [as sign] (C:\\Users\\Rao Ali Shan\\Documents\\echo-backend\\node_modules\\jsonwebtoken\\sign.js:246:25)\n    at register (file:///C:/Users/Rao%20Ali%20Shan/Documents/echo-backend/src/controllers/userController.js:44:35)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-04-24T09:10:10.703Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:12:39.329Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:12:39.449Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:12:39.476Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:21:54.015Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:32:40.749Z"}
+{"level":"error","message":"Email job error: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2025-04-24T14:36:05.839Z"}
+{"level":"error","message":"Audit job error: (conn:747, no: 1048, SQLState: 23000) Column 'action' cannot be null\nsql: INSERT INTO audit_logs (user_id, action, details, ip_address, user_agent) VALUES (?, ?, ?, ?, ?) - parameters:[2,undefined,undefined,'::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36']","timestamp":"2025-04-25T08:07:42.966Z"}
+{"level":"error","message":"Audit job 1 failed: (conn:747, no: 1048, SQLState: 23000) Column 'action' cannot be null\nsql: INSERT INTO audit_logs (user_id, action, details, ip_address, user_agent) VALUES (?, ?, ?, ?, ?) - parameters:[2,undefined,undefined,'::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36']","timestamp":"2025-04-25T08:07:42.988Z"}
+{"level":"error","message":"Audit job error: (conn:747, no: 1048, SQLState: 23000) Column 'action' cannot be null\nsql: INSERT INTO audit_logs (user_id, action, details, ip_address, user_agent) VALUES (?, ?, ?, ?, ?) - parameters:[2,undefined,undefined,'::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36']","timestamp":"2025-04-25T08:07:42.998Z"}
+{"level":"error","message":"Audit job 2 failed: (conn:747, no: 1048, SQLState: 23000) Column 'action' cannot be null\nsql: INSERT INTO audit_logs (user_id, action, details, ip_address, user_agent) VALUES (?, ?, ?, ?, ?) - parameters:[2,undefined,undefined,'::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36']","timestamp":"2025-04-25T08:07:43.003Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T08:22:20.930Z"}
+{"level":"info","message":"Audit job 3 completed","timestamp":"2025-04-25T08:22:20.935Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T10:35:25.152Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T10:35:25.175Z"}
+{"level":"info","message":"Audit job 4 completed","timestamp":"2025-04-25T10:35:25.178Z"}
+{"level":"info","message":"Session job 1 completed","timestamp":"2025-04-25T10:35:25.280Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T11:33:58.637Z"}
+{"level":"info","message":"Session job 2 completed","timestamp":"2025-04-25T11:33:58.700Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T11:33:58.731Z"}
+{"level":"info","message":"Audit job 5 completed","timestamp":"2025-04-25T11:33:58.801Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T11:38:01.429Z"}
+{"level":"info","message":"Session job 3 completed","timestamp":"2025-04-25T11:38:01.433Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T11:38:49.474Z"}
+{"level":"info","message":"Session job 4 completed","timestamp":"2025-04-25T11:38:49.478Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T11:38:49.490Z"}
+{"level":"info","message":"Audit job 6 completed","timestamp":"2025-04-25T11:38:49.493Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T11:52:59.408Z"}
+{"level":"info","message":"Session job 5 completed","timestamp":"2025-04-25T11:52:59.411Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T11:52:59.427Z"}
+{"level":"info","message":"Audit job 7 completed","timestamp":"2025-04-25T11:52:59.430Z"}
+{"level":"error","message":"Session job error: (conn:949, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:23.483Z"}
+{"level":"info","message":"Audit log created: login by user 2","timestamp":"2025-04-25T11:57:23.487Z"}
+{"level":"info","message":"Audit job 8 completed","timestamp":"2025-04-25T11:57:23.490Z"}
+{"level":"error","message":"Session job 6 failed: (conn:949, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:23.498Z"}
+{"level":"error","message":"Session job error: (conn:950, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:24.575Z"}
+{"level":"error","message":"Session job 6 failed: (conn:950, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:24.577Z"}
+{"level":"error","message":"Session job error: (conn:951, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:26.639Z"}
+{"level":"error","message":"Session job 6 failed: (conn:951, no: 1292, SQLState: 22007) Incorrect datetime value: '2025-04-26T11:57:23.456Z' for column `poc`.`sessions`.`expires_at` at row 1\nsql: INSERT INTO sessions (user_id, session_id, ip_address, user_agent, expires_at) VALUES (?, ?, ?, ?, ?) - parameters:[2,'session:2:1745582243456','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/...","timestamp":"2025-04-25T11:57:26.643Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T12:57:15.140Z"}
+{"level":"info","message":"Session job 7 completed","timestamp":"2025-04-25T12:57:15.142Z"}
+{"code":"ER_BAD_DB_ERROR","errno":1049,"fatal":true,"level":"error","message":"Database pool error: Error during pool initialization: (conn:1206, no: 1049, SQLState: 42000) Unknown database 'auth_system'\n    (pool connections: active=0 idle=0 limit=10)","name":"SqlError","sql":null,"sqlMessage":"Unknown database 'auth_system'","sqlState":"42000","stack":"SqlError: Error during pool initialization: (conn:1206, no: 1049, SQLState: 42000) Unknown database 'auth_system'\n    (pool connections: active=0 idle=0 limit=10)\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at PacketNodeEncoded.readError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\io\\packet.js:579:19)\n    at Authentication.handshakeResult (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\cmd\\handshake\\authentication.js:179:32)\n    at Authentication.onPacketReceive (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\cmd\\handshake\\authentication.js:42:17)\n    at PacketInputStream.receivePacketBasic (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:85:9)\n    at PacketInputStream.onData (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\io\\packet-input-stream.js:135:20)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)","timestamp":"2025-04-25T13:00:52.985Z"}
+{"cause":{"code":"ER_BAD_DB_ERROR","errno":1049,"fatal":true,"name":"SqlError","sql":null,"sqlMessage":"Unknown database 'auth_system'","sqlState":"42000"},"code":"ER_GET_CONNECTION_TIMEOUT","errno":45028,"fatal":false,"level":"error","message":"Error connecting to the database: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20000ms\n    (pool connections: active=0 idle=0 limit=10)","name":"SqlError","sql":null,"sqlMessage":"retrieve connection from pool timeout after 20000ms\n    (pool connections: active=0 idle=0 limit=10)","sqlState":"HY000","stack":"SqlError: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20000ms\n    (pool connections: active=0 idle=0 limit=10)\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\misc\\errors.js:65:21)\n    at Pool._requestTimeoutHandler (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\pool.js:354:26)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-04-25T13:00:52.998Z"}
+{"code":"ER_GET_CONNECTION_TIMEOUT","errno":45028,"fatal":false,"level":"error","message":"Error connecting to the database: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20021ms\n    (pool connections: active=0 idle=0 limit=10)","name":"SqlError","sql":null,"sqlMessage":"retrieve connection from pool timeout after 20021ms\n    (pool connections: active=0 idle=0 limit=10)","sqlState":"HY000","stack":"SqlError: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20021ms\n    (pool connections: active=0 idle=0 limit=10)\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at Pool._requestTimeoutHandler (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\pool.js:354:26)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-04-25T13:30:50.839Z"}
+{"code":"ER_GET_CONNECTION_TIMEOUT","errno":45028,"fatal":false,"level":"error","message":"Error connecting to the database: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20003ms\n    (pool connections: active=0 idle=0 limit=10)","name":"SqlError","sql":null,"sqlMessage":"retrieve connection from pool timeout after 20003ms\n    (pool connections: active=0 idle=0 limit=10)","sqlState":"HY000","stack":"SqlError: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20003ms\n    (pool connections: active=0 idle=0 limit=10)\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at Pool._requestTimeoutHandler (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\pool.js:354:26)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-04-25T13:32:37.887Z"}
+{"code":"ER_GET_CONNECTION_TIMEOUT","errno":45028,"fatal":false,"level":"error","message":"Error connecting to the database: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20101ms\n    (pool connections: active=0 idle=0 limit=10)","name":"SqlError","sql":null,"sqlMessage":"retrieve connection from pool timeout after 20101ms\n    (pool connections: active=0 idle=0 limit=10)","sqlState":"HY000","stack":"SqlError: (conn:-1, no: 45028, SQLState: HY000) retrieve connection from pool timeout after 20101ms\n    (pool connections: active=0 idle=0 limit=10)\n    at module.exports.createError (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\misc\\errors.js:66:10)\n    at Pool._requestTimeoutHandler (C:\\Users\\Rao Ali Shan\\Documents\\POC\\node_modules\\mariadb\\lib\\pool.js:354:26)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-04-25T13:36:40.417Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:36:56.129Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:36:56.411Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:36:56.455Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:36:56.455Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:36:56.456Z"}
+{"level":"warn","message":"Login rate limit exceeded for IP: ::1","timestamp":"2025-04-25T13:42:58.049Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:50:34.964Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:50:34.984Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:50:34.986Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:50:34.987Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:50:34.988Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:51:07.354Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:51:07.372Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:51:07.373Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:51:07.374Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:51:07.375Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:51:30.205Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:51:30.227Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:51:30.230Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:51:30.231Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:51:30.232Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:51:59.913Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:51:59.924Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:51:59.925Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:51:59.927Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:51:59.929Z"}
+{"level":"warn","message":"Login rate limit exceeded for IP: ::1","timestamp":"2025-04-25T13:52:10.002Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:54:30.228Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:54:30.249Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:54:30.252Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:54:30.253Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:54:30.257Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:55:02.496Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:55:02.513Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:55:02.514Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:55:02.515Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:55:02.516Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T13:58:52.828Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T13:58:52.840Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T13:58:52.841Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T13:58:52.842Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T13:58:52.843Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-25T14:03:09.721Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-25T14:03:09.729Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-25T14:03:09.731Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-25T14:03:09.732Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-25T14:03:09.734Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-25T15:03:09.766Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T15:03:09.776Z"}
+{"level":"info","message":"Session job 8 completed","timestamp":"2025-04-25T15:03:09.796Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T18:33:38.714Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-25T18:33:38.714Z"}
+{"level":"warn","message":"Unknown session action: undefined","timestamp":"2025-04-25T18:34:38.816Z"}
+{"level":"info","message":"Session job 9 completed","timestamp":"2025-04-25T18:34:38.818Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-28T08:27:59.531Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-28T08:39:47.218Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-28T08:39:47.219Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-28T08:39:47.220Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-28T08:39:47.221Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T09:39:47.340Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T10:39:47.372Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T11:49:57.627Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T12:49:55.995Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T13:49:55.989Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T14:49:55.962Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-28T15:19:31.370Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-28T15:19:44.156Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-28T15:19:44.238Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-28T15:19:44.240Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-28T15:19:44.251Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-28T15:19:44.256Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-28T18:44:33.559Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-29T06:10:49.869Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-29T07:10:40.620Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T07:31:01.768Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T07:31:01.851Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T07:31:01.853Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T07:31:01.854Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T07:31:01.855Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T07:56:04.355Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T07:56:04.815Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T07:56:04.823Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T07:56:04.824Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T07:56:04.825Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T07:57:01.073Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T07:57:01.105Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T07:57:01.107Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T07:57:01.109Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T07:57:01.110Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T07:57:24.126Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T07:57:24.156Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T07:57:24.157Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T07:57:24.158Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T07:57:24.159Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-29T08:57:26.167Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:04:01.187Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:04:01.205Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:04:01.206Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:04:01.207Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:04:01.208Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:10:03.731Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:10:03.752Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:10:03.756Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:10:03.758Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:10:03.759Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:11:27.982Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:11:27.999Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:11:28.000Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:11:28.002Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:11:28.003Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:39:37.153Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:39:37.173Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:39:37.174Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:39:37.175Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:39:37.176Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:40:31.932Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:40:31.956Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:40:31.958Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:40:31.959Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:40:31.960Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:45:34.209Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:45:34.233Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:45:34.234Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:45:34.235Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:45:34.244Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:46:58.738Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:46:58.772Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:46:58.775Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:46:58.777Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:46:58.789Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:47:17.824Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:47:17.993Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:47:18.020Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:47:18.120Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:47:18.272Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:48:39.653Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:48:39.755Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:48:39.819Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:48:39.853Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:48:39.867Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T09:49:10.437Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T09:49:10.456Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T09:49:10.460Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T09:49:10.462Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T09:49:10.470Z"}
+{"level":"info","message":"Scheduled session cleanup job added to queue","timestamp":"2025-04-29T11:08:04.087Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T11:48:21.271Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T11:48:21.283Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T11:48:21.283Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T11:48:21.285Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T11:48:21.286Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T11:50:56.673Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T11:50:56.720Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T11:50:56.721Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T11:50:56.722Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T11:50:56.723Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:16:02.919Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:16:03.007Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:16:03.021Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:16:03.022Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:16:03.022Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:16:21.408Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:16:21.474Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:16:21.482Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:16:21.484Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:16:21.486Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:16:39.011Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:16:39.093Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:16:39.099Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:16:39.102Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:16:39.104Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:17:32.759Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:17:32.782Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:17:32.796Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:17:32.798Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:17:32.804Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:19:08.207Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:19:08.224Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:19:08.226Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:19:08.228Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:19:08.229Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:19:48.905Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:19:48.913Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:19:48.920Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:19:48.921Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:19:48.922Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:20:13.490Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:20:13.531Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:20:13.536Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:20:13.539Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:20:13.549Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:20:26.206Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:20:26.229Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:20:26.235Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:20:26.236Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:20:26.237Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:20:35.471Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:20:35.501Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:20:35.502Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:20:35.518Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:20:35.521Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-29T12:23:30.701Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-29T12:23:30.747Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-04-29T12:23:30.748Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-04-29T12:23:30.748Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-04-29T12:23:30.749Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-02T13:28:07.406Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-02T13:28:53.290Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-05-02T13:28:53.291Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-05-02T13:28:53.291Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-05-02T13:28:53.292Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-02T13:46:21.346Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-02T13:46:21.354Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-05-02T13:46:21.355Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-05-02T13:46:21.356Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-05-02T13:46:21.357Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:46:22.816Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:46:25.059Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:47:21.887Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:47:22.979Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:52:47.376Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:52:48.330Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:53:29.605Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:55:25.760Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:55:27.048Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:56:14.800Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:57:02.778Z"}
+{"level":"warn","message":"Email rate limit exceeded for email: undefined","timestamp":"2025-05-02T13:57:04.059Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-02T13:58:03.520Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-02T13:58:03.531Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-05-02T13:58:03.534Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-05-02T13:58:03.535Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-05-02T13:58:03.536Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-02T14:00:24.267Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-02T14:00:24.299Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-05-02T14:00:24.302Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-05-02T14:00:24.303Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-05-02T14:00:24.305Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-02T14:01:12.326Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-02T14:01:12.344Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-05-02T14:01:12.345Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2025-05-02T14:01:12.347Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2025-05-02T14:01:12.348Z"}
